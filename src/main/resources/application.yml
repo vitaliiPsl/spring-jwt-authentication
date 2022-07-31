@@ -11,3 +11,11 @@ logging:
   level:
     root: INFO
     com.example: DEBUG
+
+jwt:
+  secret: ${JWT_SECRET:jwt.super.secret.key.jwt.super.secret.key}
+  token_life_time: ${JWT_LIFE_TIME:7}
+
+admin:
+  email: admin@mail.com
+  password: password
